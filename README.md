@@ -25,6 +25,13 @@ This is a basic Django project built to demonstrate the principles of [pipenv](h
 3.  `python manage.py createsuperuser` to make an admin user.
 4.  `python manage.py runserver` to run a development server
 
+
+#### Switching to `pipenv`
+
+1.  `brew install pipenv` to install.
+2.  `export PIPENV_VENV_IN_PROJECT=1` to configure virtualenv placement.
+3.  `pipenv install --three`
+
 #### What's inside
 
 -   `project/`: Project-wide settings and config.
