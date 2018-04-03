@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 
 
@@ -12,3 +11,11 @@ class ListArchiveView(ListView):
 
 class ListDetailView(DetailView):
     model = List
+
+    # def get_context_data(self, *args, **kwargs):
+    #     """"""
+    #     context = super(ListDetailView, self).get_context_data(*args, **kwargs)
+    #
+    #     context.update({})
+    #
+    #     return context
