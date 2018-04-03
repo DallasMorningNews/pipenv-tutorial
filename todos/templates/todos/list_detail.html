@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>{{ list.title }}</h1>
+    <p>{{ list.description }}</p>
+
+    <h3>Items:</h3>
+    <ul>
+      {% for item in list.listitem_set.all %}
+      <li>
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

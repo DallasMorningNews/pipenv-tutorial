@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>My lists</h1>
+    <ul>
+    {% for list in list_list %}
+    <li>
+      <a href="/list-{{ list.id }}/">{{ list.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
